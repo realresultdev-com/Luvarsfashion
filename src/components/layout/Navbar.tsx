@@ -334,7 +334,7 @@ export default function Navbar() {
               {/* Top Drawer Header */}
               <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                 <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-                  <img src="/logo-white.png" alt="Luvars Fashion" className="h-8 w-auto object-contain" />
+                  <LuvarsLogo isWhite={true} />
                 </Link>
                 <button
                   type="button"

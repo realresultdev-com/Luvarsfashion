@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { Link } from "react-router-dom";
 import type { Product } from "../../types/product.types";
 import { getProductUrl } from "../../utils/urlSecurity";
-import { formatFashionTitle } from "../../utils/fashionMapping";
+import { formatFashionTitle, cleanFashionImageUrl } from "../../utils/fashionMapping";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 interface TrendingSliderProps {
@@ -166,7 +166,7 @@ export default function TrendingSlider({ products }: TrendingSliderProps) {
           }}
         >
           {extendedProducts.map((product, idx) => {
-            const img = product.images?.[0] || "/logo-transparent.png";
+            const img = cleanFashionImageUrl(product.images?.[0], idx);
             const mrp =
               product.original_price && product.original_price > product.price
                 ? product.original_price

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { formatFashionTitle } from "../../utils/fashionMapping";
+import { formatFashionTitle, cleanFashionImageUrl } from "../../utils/fashionMapping";
 import { Video, Volume2, VolumeX, Sparkles } from "lucide-react";
 import { heroVideoService, type HeroVideo } from "../../services/heroVideo.service";
 import { getAdaptiveVideoUrl } from "../../utils/videoTranscoder";
@@ -8,7 +8,7 @@ import { nativeFeedback } from "../../utils/haptics";
 
 const isImageMedia = (url?: string): boolean => {
   if (!url) return false;
-  return Boolean(url.match(/\.(jpg|jpeg|png|webp|gif|avif|svg)(\?.*)?$/i));
+  return Boolean(url.match(/\.(jpg|jpeg|png|webp|gif|avif|svg)(\?.*)?$/i)) || url.includes("images.unsplash.com");
 };
 
 const interleaveMedia = (items: HeroVideo[]): HeroVideo[] => {
@@ -51,11 +51,8 @@ export default function HeroVideoBanner() {
   const isInteracting = useRef(false);
   const isVisibleInViewport = useRef(true);
 
-  const sanitizeVideoUrl = (url: string) => {
-    if (!url || url.includes("mixkit-") || url.includes("hero-mattress") || url.includes("buddymatters")) {
-      return "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80";
-    }
-    return url;
+  const sanitizeVideoUrl = (url: string, idx = 0) => {
+    return cleanFashionImageUrl(url, idx);
   };
 
   // 1. Fetch active videos from API
@@ -331,11 +328,9 @@ export default function HeroVideoBanner() {
                       preload="auto"
                       onError={(e) => {
                         const el = e.currentTarget;
-                        if (!el.src.includes("hero-mattress.mp4")) {
-                          el.src = "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80";
-                          el.muted = isMuted;
-                          el.play().catch(() => {});
-                        }
+                        el.src = "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80";
+                        el.muted = isMuted;
+                        el.play().catch(() => {});
                       }}
                       onPause={(e) => {
                         if (isVisibleInViewport.current && !isInteracting.current) {

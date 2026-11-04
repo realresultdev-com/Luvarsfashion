@@ -5,7 +5,7 @@
  * background prefetching, and instant cache clearance.
  */
 
-const CACHE_NAME = "luvars-fashion-videos-v1";
+const CACHE_NAME = "luvars-fashion-videos-v3";
 const MAX_CACHED_ITEMS = 15;
 const MAX_CACHE_SIZE_BYTES = 80 * 1024 * 1024; // 80 MB threshold
 
@@ -17,6 +17,22 @@ class VideoCacheService {
 
   constructor() {
     this.isCacheSupported = typeof window !== "undefined" && "caches" in window;
+    if (this.isCacheSupported) {
+      this.purgeOldCaches();
+    }
+  }
+
+  async purgeOldCaches(): Promise<void> {
+    try {
+      const keys = await caches.keys();
+      for (const k of keys) {
+        if (k !== CACHE_NAME) {
+          await caches.delete(k);
+        }
+      }
+    } catch {
+      // ignore
+    }
   }
 
   /**

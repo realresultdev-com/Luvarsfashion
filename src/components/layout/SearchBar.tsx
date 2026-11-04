@@ -20,6 +20,7 @@ import {
   clearAllSearches,
 } from "../../store/searchSlice";
 import { getProductUrl } from "../../utils/urlSecurity";
+import { formatFashionTitle, cleanFashionImageUrl } from "../../utils/fashionMapping";
 import type { Product } from "../../types/product.types";
 
 interface SearchBarProps {
@@ -324,10 +325,7 @@ export default function SearchBar({
               <div className="overflow-y-auto max-h-[340px] divide-y divide-gray-100">
                 {matchingProducts.length > 0 ? (
                   matchingProducts.map((product) => {
-                    const thumb =
-                      product.images && product.images.length > 0
-                        ? product.images[0]
-                        : "/placeholder-mattress.png";
+                    const thumb = cleanFashionImageUrl(product.images?.[0]);
 
                     return (
                       <div
@@ -351,7 +349,7 @@ export default function SearchBar({
                         {/* Info */}
                         <div className="flex-1 min-w-0">
                           <h4 className="text-xs sm:text-sm font-medium text-gray-900 group-hover:text-[#0ea5e9] truncate transition-colors">
-                            {product.name || "Untitled Product"}
+                            {formatFashionTitle(product.name) || "Untitled Product"}
                           </h4>
                           {product.category?.name && (
                             <p className="text-[11px] text-gray-500 truncate">

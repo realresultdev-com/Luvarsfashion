@@ -4,6 +4,7 @@ import { useAuth } from "../../hooks/useAuth";
 import { useCart } from "../../hooks/useCart";
 import { orderService } from "../../services/order.service";
 import { paymentService } from "../../services/payment.service";
+import LuvarsLogo from "../../components/common/LuvarsLogo";
 import { Lock, AlertCircle } from "lucide-react";
 
 declare global {
@@ -167,11 +168,7 @@ export default function Checkout() {
       {/* Checkout Header */}
       <div className="flex items-center justify-between border-b border-gray-200 pb-3">
         <Link to="/" className="flex items-center">
-          <img
-            src="/logo-transparent.png"
-            alt="Buddy Mattress"
-            className="h-8 sm:h-9 w-auto object-contain"
-          />
+          <LuvarsLogo />
         </Link>
       </div>
 

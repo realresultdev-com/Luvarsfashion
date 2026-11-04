@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Outlet, NavLink, Link, useLocation } from "react-router-dom";
 import AdminSidebar, { ADMIN_NAV_ITEMS } from "./AdminSidebar";
+import LuvarsLogo from "../common/LuvarsLogo";
 import { Menu, X, ArrowLeft, Store, ShieldCheck, Bell } from "lucide-react";
 import NotificationCenterModal from "../common/NotificationCenterModal";
 import { notificationService } from "../../services/notification.service";
@@ -57,11 +58,7 @@ export default function AdminLayout() {
         {/* Native Top App Bar */}
         <div className="bg-black text-white px-3.5 py-2.5 flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0">
-            <img
-              src="/logo-white.png"
-              alt="Luvars Fashion"
-              className="h-5 w-auto object-contain shrink-0"
-            />
+            <LuvarsLogo isWhite={true} className="scale-90 origin-left" />
             <span className="text-[10px] font-semibold tracking-wider uppercase bg-white/10 px-2 py-0.5 rounded border border-white/20 shrink-0">
               Admin
             </span>

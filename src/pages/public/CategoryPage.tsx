@@ -42,11 +42,11 @@ export default function CategoryPage() {
       {/* Breadcrumb Navigation */}
       <nav className="text-xs text-gray-500 flex items-center gap-1.5 overflow-x-auto scrollbar-none whitespace-nowrap">
         <Link to="/" className="hover:text-black hover:underline font-medium">
-          Buddy Mattress
+          Luvars Fashion
         </Link>
         <ChevronRight className="w-3 h-3 text-gray-400 shrink-0" />
         <span className="text-gray-900 font-semibold">
-          {category ? category.name : "Sleep Collection"}
+          {category ? category.name : "Fashion Collection"}
         </span>
       </nav>
 
@@ -54,7 +54,7 @@ export default function CategoryPage() {
       <div className="border-b border-gray-200 pb-4 flex items-center justify-between">
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            {category ? category.name : "Sleep Collection"}
+            {category ? category.name : "Fashion Collection"}
           </h1>
           <p className="text-xs text-gray-500 mt-1">
             {products.length} product{products.length === 1 ? "" : "s"}

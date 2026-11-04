@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { X, ZoomIn, ZoomOut, ChevronLeft, ChevronRight } from "lucide-react";
+import { cleanFashionImageUrl } from "../../utils/fashionMapping";
 
 interface ProductGalleryProps {
   images?: string[];
@@ -17,10 +18,12 @@ export default function ProductGallery({
   className = "",
   featuredImage,
 }: ProductGalleryProps) {
-  const baseImageList = images.length > 0 ? images : [FALLBACK_IMAGE];
+  const cleanedImages = images.map((img, i) => cleanFashionImageUrl(img, i));
+  const baseImageList = cleanedImages.length > 0 ? cleanedImages : [cleanFashionImageUrl()];
+  const cleanedFeatured = featuredImage ? cleanFashionImageUrl(featuredImage) : undefined;
   const imageList =
-    featuredImage && !baseImageList.includes(featuredImage)
-      ? [featuredImage, ...baseImageList]
+    cleanedFeatured && !baseImageList.includes(cleanedFeatured)
+      ? [cleanedFeatured, ...baseImageList]
       : baseImageList;
 
   const [selectedImage, setSelectedImage] = useState<string>(featuredImage || imageList[0]);

@@ -39,7 +39,7 @@ export default function LegalMetrologyCard({
   const netQuantity =
     aboutNetQty ||
     (isPillow
-      ? "1 N (1 Piece Pillow)"
+      ? "1 N (1 Piece Polo)"
       : isProtector
       ? "1 N (1 Piece T-Shirt)"
       : "1 N (1 Piece T-Shirt)");
@@ -49,8 +49,8 @@ export default function LegalMetrologyCard({
     (isPillow
       ? "60 cm x 38 cm x 11.5 cm (24 x 15 x 4.5 inches)"
       : isProtector
-      ? "198 cm x 182 cm x 25 cm (78 x 72 inches, fits up to 10-inch mattress)"
-      : "198 cm x 182 cm x 15.2 cm (78 x 72 x 6 inches - Standard King)");
+      ? "Standard Indian Fit (Sizes S / M / L / XL / XXL available)"
+      : "Standard Indian Fit (Sizes S / M / L / XL / XXL available)");
 
   return (
     <div

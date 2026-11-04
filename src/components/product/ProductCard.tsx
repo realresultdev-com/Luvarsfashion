@@ -5,7 +5,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useCart } from "../../context/CartContext";
 import { useLanguage } from "../../context/LanguageContext";
 import { getProductUrl } from "../../utils/urlSecurity";
-import { formatFashionTitle } from "../../utils/fashionMapping";
+import { formatFashionTitle, cleanFashionImageUrl } from "../../utils/fashionMapping";
 import type { Product, ProductColorVariant } from "../../types/product.types";
 import RatingBadge from "../common/RatingBadge";
 import PriceTag from "../common/PriceTag";
@@ -24,11 +24,8 @@ export default function ProductCard({ product }: { product: Product }) {
     product.color_variants && product.color_variants.length > 0 ? product.color_variants[0] : null
   );
 
-  const displayedImage =
-    selectedVariant?.image ||
-    (product.images && product.images.length > 0
-      ? product.images[0]
-      : "/logo-transparent.png");
+  const rawImage = selectedVariant?.image || product.images?.[0];
+  const displayedImage = cleanFashionImageUrl(rawImage);
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();

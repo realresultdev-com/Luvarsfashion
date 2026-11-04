@@ -834,7 +834,7 @@ export default function ProductForm() {
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="e.g. Orthopedic Memory Foam Mattress"
+              placeholder="e.g. Vintage Oversized Graphic T-Shirt"
               className="w-full px-3 py-1.5 border border-gray-200 rounded-md text-xs text-gray-900 focus:border-black focus:ring-0 outline-none bg-white placeholder:text-gray-400"
             />
           </div>

@@ -702,13 +702,13 @@ export default function Profile() {
                     rows={3}
                     value={returnNotes}
                     onChange={(e) => setReturnNotes(e.target.value)}
-                    placeholder="Tell us about your sleep experience or request a replacement size..."
+                    placeholder="Tell us about your issue or request an exchange size..."
                     className="w-full text-xs border border-gray-300 rounded-lg p-2.5 text-[#0f1111] focus:outline-none focus:border-[#0ea9df] resize-none"
                   />
                 </div>
 
                 <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 text-[11px] text-blue-900 leading-relaxed">
-                  <strong>Zero-Cost Doorstep Pickup:</strong> You do not need to pack the mattress into original cardboard boxes. Our courier partner brings dedicated protective mattress packaging.
+                  <strong>Zero-Cost Doorstep Pickup:</strong> Keep the apparel item unused with original tags attached. Our courier partner will collect the return from your doorstep.
                 </div>
 
                 <div className="flex items-center justify-end gap-2 pt-2 border-t border-gray-100">
