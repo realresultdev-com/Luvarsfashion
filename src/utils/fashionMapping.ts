@@ -21,3 +21,4 @@ export function formatFashionTitle(title?: string): string {
     .replace(/quilt/gi, "tee")
     .replace(/Travel Quilt Series/gi, "Urban Graphic Tee Series");
 }
+

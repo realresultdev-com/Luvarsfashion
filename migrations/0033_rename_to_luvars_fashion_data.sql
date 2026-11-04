@@ -17,3 +17,4 @@ UPDATE hero_videos SET title = 'Ready for New Fashion Trends?', subtitle = 'Shop
 UPDATE hero_videos SET title = 'Dive Into Pure Style', subtitle = 'Fresh drops every week' WHERE id = 'hv_57d4240e3c';
 UPDATE hero_videos SET title = 'Look Sharp. Stay Comfortable.', subtitle = 'Luvars Fashion Originals' WHERE id = 'hv_502abe5452';
 UPDATE hero_videos SET title = 'Choose the style that matches your personality ✨ Only at Luvars Fashion', subtitle = 'Free shipping across India' WHERE id = 'hv_8833639dd7';
+

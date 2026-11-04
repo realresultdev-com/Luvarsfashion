@@ -52,8 +52,8 @@ export default function HeroVideoBanner() {
   const isVisibleInViewport = useRef(true);
 
   const sanitizeVideoUrl = (url: string) => {
-    if (!url || url.includes("mixkit-woman-relaxing-in-a-comfortable-bed-41556-large.mp4")) {
-      return "/videos/hero-mattress.mp4";
+    if (!url || url.includes("mixkit-") || url.includes("hero-mattress") || url.includes("buddymatters")) {
+      return "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80";
     }
     return url;
   };
@@ -81,8 +81,8 @@ export default function HeroVideoBanner() {
               id: "hv_local_1",
               title: "New Season Drops: Premium T-Shirts & Casuals",
               subtitle: "100% Combed Cotton & High-Definition Graphic Prints",
-              video_url: "/videos/hero-mattress.mp4",
-              poster_url: "/hero-mattress.jpg",
+              video_url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80",
+              poster_url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80",
               link_url: "/shop",
               display_order: 1,
               is_active: 1,
@@ -96,8 +96,8 @@ export default function HeroVideoBanner() {
             id: "hv_local_1",
             title: "New Season Drops: Premium T-Shirts & Casuals",
             subtitle: "100% Combed Cotton & High-Definition Graphic Prints",
-            video_url: "/videos/hero-mattress.mp4",
-            poster_url: "/hero-mattress.jpg",
+            video_url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80",
+            poster_url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80",
             link_url: "/shop",
             display_order: 1,
             is_active: 1,
@@ -323,7 +323,7 @@ export default function HeroVideoBanner() {
                         }
                       }}
                       src={activeSrc}
-                      poster={vid.poster_url || "/hero-mattress.jpg"}
+                      poster={vid.poster_url || "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80"}
                       autoPlay
                       loop
                       muted={isMuted}
@@ -332,7 +332,7 @@ export default function HeroVideoBanner() {
                       onError={(e) => {
                         const el = e.currentTarget;
                         if (!el.src.includes("hero-mattress.mp4")) {
-                          el.src = "/videos/hero-mattress.mp4";
+                          el.src = "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&auto=format&fit=crop&q=80";
                           el.muted = isMuted;
                           el.play().catch(() => {});
                         }
