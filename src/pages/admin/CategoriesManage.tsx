@@ -136,7 +136,7 @@ export default function CategoriesManage() {
             <input
               type="text"
               required
-              placeholder="e.g. Mattresses"
+              placeholder="e.g. T-Shirts, Polos, Hoodies"
               value={newCatName}
               onChange={(e) => setNewCatName(e.target.value)}
               className="w-full px-3 py-1.5 border border-gray-200 rounded-md text-xs text-gray-900 focus:border-black focus:ring-0 outline-none bg-white placeholder:text-gray-400"

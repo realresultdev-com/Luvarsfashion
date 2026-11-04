@@ -49,7 +49,7 @@ export default function AccountDeletion() {
               <p className="font-semibold">Permanent Action Notice</p>
               <p className="mt-1 text-amber-800 text-xs sm:text-sm">
                 In compliance with Google Play User Data policies, submitting this form will initiate
-                the permanent removal of your Buddy Mattress account, order history records, saved addresses,
+                the permanent removal of your Luvars Fashion account, order history records, saved addresses,
                 and associated personal information from our databases.
               </p>
             </div>

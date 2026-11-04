@@ -201,7 +201,7 @@ export default function GoogleLoginButton({
 
       // B. Fallback to Chrome Custom Tabs with device account picker
       try {
-        const redirectUri = "https://buddy-mattress.pages.dev/login";
+        const redirectUri = "https://luvarsfashion.pages.dev/login";
         const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${encodeURIComponent(
           GOOGLE_CLIENT_ID
         )}&redirect_uri=${encodeURIComponent(

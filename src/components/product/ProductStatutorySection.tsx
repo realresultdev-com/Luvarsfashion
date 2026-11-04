@@ -34,8 +34,8 @@ export default function ProductStatutorySection({ product }: ProductStatutorySec
     (isPillow
       ? "1 N (1 Piece Pillow)"
       : isProtector
-      ? "1 N (1 Piece Mattress Protector)"
-      : "1 N (1 Piece Mattress)");
+      ? "1 N (1 Piece T-Shirt)"
+      : "1 N (1 Piece T-Shirt)");
 
   const standardDimensions =
     aboutDimensions ||
@@ -48,8 +48,8 @@ export default function ProductStatutorySection({ product }: ProductStatutorySec
   const genericName = isPillow
     ? "Orthopedic Ergonomic Pillow"
     : isProtector
-    ? "Waterproof Breathable Mattress Protector"
-    : "Orthopedic Ergonomic Sleep Mattress";
+    ? "Polo Cotton T-Shirt"
+    : "Premium Cotton Casual T-Shirt";
 
   return (
     <div className="pt-4 border-t border-gray-200 space-y-2 select-none">
@@ -93,7 +93,7 @@ export default function ProductStatutorySection({ product }: ProductStatutorySec
               Manufacturer &amp; Packer
             </td>
             <td className="py-1 text-[#0f1111] font-normal align-top">
-              Buddy Mattress, Paramathi Velur, Namakkal, Tamil Nadu - 637207, India
+              Luvars Fashion, Paramathi Velur, Namakkal, Tamil Nadu - 637207, India
             </td>
           </tr>
           <tr>
@@ -101,7 +101,7 @@ export default function ProductStatutorySection({ product }: ProductStatutorySec
               Customer Support
             </td>
             <td className="py-1 text-[#0f1111] font-normal align-top">
-              support@buddymattress.in | +91 94433 00000
+              support@luvarsfashion.com | +91 94433 00000
             </td>
           </tr>
         </tbody>

@@ -41,8 +41,8 @@ export default function LegalMetrologyCard({
     (isPillow
       ? "1 N (1 Piece Pillow)"
       : isProtector
-      ? "1 N (1 Piece Mattress Protector)"
-      : "1 N (1 Piece Mattress)");
+      ? "1 N (1 Piece T-Shirt)"
+      : "1 N (1 Piece T-Shirt)");
 
   const standardDimensions =
     aboutDimensions ||
@@ -109,7 +109,7 @@ export default function LegalMetrologyCard({
             Manufactured, Packed & Marketed By
           </span>
           <p className="text-gray-700 leading-relaxed font-medium">
-            <strong className="text-gray-900">Buddy Mattress</strong>
+            <strong className="text-gray-900">Luvars Fashion</strong>
             <br />
             Near RTO Office, Paramathi, Paramathi Velur,
             <br />
@@ -125,9 +125,9 @@ export default function LegalMetrologyCard({
           <p className="text-gray-700 leading-relaxed font-medium">
             For questions, returns, warranty, or feedback, reach our support team at:
             <br />
-            <span className="text-gray-900 font-semibold">Address:</span> Buddy Mattress, Paramathi Velur, Tamil Nadu - 637207
+            <span className="text-gray-900 font-semibold">Address:</span> Luvars Fashion, Paramathi Velur, Tamil Nadu - 637207
             <br />
-            <span className="text-gray-900 font-semibold">Email:</span> support@buddymattress.in
+            <span className="text-gray-900 font-semibold">Email:</span> support@luvarsfashion.com
             <br />
             <span className="text-gray-900 font-semibold">Helpline:</span> +91 94433 00000
           </p>

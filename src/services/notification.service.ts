@@ -162,7 +162,7 @@ class NotificationService {
           const formattedAmount = data.formattedAmount || (data.totalAmount ? `₹${Number(data.totalAmount).toLocaleString("en-IN")}` : "");
           const shortOrderId = data.shortOrderId || (orderId ? orderId.slice(-6).toUpperCase() : "");
           const title = notification.title || (formattedAmount ? `📦 Order Placed: ${formattedAmount} • #${shortOrderId}` : `📦 Order Placed #${shortOrderId}`);
-          const message = notification.body || (data.customerName ? `${data.customerName} placed an order for ${data.productSummary || data.firstItemName || 'Buddy Mattress'}` : "New order placed by customer");
+          const message = notification.body || (data.customerName ? `${data.customerName} placed an order for ${data.productSummary || data.firstItemName || 'Luvars Fashion'}` : "New order placed by customer");
 
           const notifItem: AppNotification = {
             id: notifId,

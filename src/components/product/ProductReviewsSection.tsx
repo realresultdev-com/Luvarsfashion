@@ -412,7 +412,7 @@ export default function ProductReviewsSection({
             {/* Photo Upload Section */}
             <div>
               <label className="block text-xs font-bold text-gray-700 mb-1.5">
-                Add Photos of your Mattress or Bedding (Optional)
+                Add Photos of your Outfit or T-Shirt (Optional)
               </label>
               <p className="text-[11px] text-gray-500 mb-2">
                 Shoppers love seeing real photos of the product in your home bedroom!
@@ -569,7 +569,7 @@ export default function ProductReviewsSection({
               >
                 <img
                   src={photoUrl}
-                  alt={`Customer mattress photo ${idx + 1}`}
+                  alt={`Customer outfit photo ${idx + 1}`}
                   className="w-full h-full object-cover"
                 />
               </button>

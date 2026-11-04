@@ -112,7 +112,7 @@ export function useCapacitorNative() {
         }
 
         // Generic in-app deep link route
-        const sanitized = rawUrl.replace("com.buddymattress.app://", "/");
+        const sanitized = rawUrl.replace("com.luvarsfashion.app://", "/");
         if (sanitized && sanitized !== "/" && sanitized !== "/login") {
           navigate(sanitized);
         }

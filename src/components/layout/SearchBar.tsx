@@ -221,7 +221,7 @@ export default function SearchBar({
               inputRef.current?.blur();
             }
           }}
-          placeholder={t("searchPlaceholder") || "Search Buddy Mattress..."}
+          placeholder={t("searchPlaceholder") || "Search Luvars Fashion..."}
           className="flex-1 px-2 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none bg-white font-normal h-full min-w-0"
           autoComplete="off"
           aria-label="Search"

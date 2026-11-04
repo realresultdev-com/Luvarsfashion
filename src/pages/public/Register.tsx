@@ -39,12 +39,12 @@ export default function Register() {
 
   return (
     <div className="max-w-sm mx-auto py-8 px-4 space-y-4">
-      {/* Buddy Mattress Logo */}
+      {/* Luvars Fashion Logo */}
       <div className="text-center">
         <Link to="/" className="inline-flex flex-col items-center">
           <img
             src="/logo-transparent.png"
-            alt="Buddy Mattress"
+            alt="Luvars Fashion"
             className="h-12 w-auto object-contain"
           />
         </Link>
@@ -109,7 +109,7 @@ export default function Register() {
         </form>
 
         <p className="text-[11px] text-gray-600 leading-normal">
-          By creating an account or logging in, you agree to Buddy Mattress&apos;s{" "}
+          By creating an account or logging in, you agree to Luvars Fashion&apos;s{" "}
           <Link to="/terms" className="text-[#0ea9df] hover:underline font-semibold">Terms of Service</Link> and{" "}
           <Link to="/privacy" className="text-[#0ea9df] hover:underline font-semibold">Privacy Policy</Link>.
         </p>

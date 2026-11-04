@@ -5,7 +5,7 @@ import { Capacitor } from "@capacitor/core";
 // When running in a browser, use the environment variable or default to same-origin /api.
 const getBaseURL = () => {
   if (Capacitor.isNativePlatform()) {
-    return "https://buddy-mattress.pages.dev/api";
+    return "https://luvarsfashion.pages.dev/api";
   }
   return import.meta.env.VITE_API_URL || "/api";
 };

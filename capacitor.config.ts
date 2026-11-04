@@ -1,11 +1,11 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.buddymattress.app',
-  appName: 'Buddy Mattress',
+  appId: 'com.luvarsfashion.app',
+  appName: 'Luvars Fashion',
   webDir: 'dist',
   server: {
-    url: 'https://buddy-mattress.pages.dev',
+    url: 'https://luvarsfashion.pages.dev',
     cleartext: false,
     androidScheme: 'https',
   },

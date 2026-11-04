@@ -21,7 +21,7 @@ export default function ProductBreadcrumbs({
       className={`text-xs text-gray-500 flex items-center gap-1.5 flex-wrap ${className}`}
     >
       <Link to="/" className="text-[#0ea9df] hover:underline font-semibold">
-        Buddy Mattress
+        Luvars Fashion
       </Link>
       <ChevronRight className="w-3.5 h-3.5 text-gray-400 shrink-0" />
       {categoryId ? (

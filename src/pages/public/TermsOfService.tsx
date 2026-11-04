@@ -22,14 +22,14 @@ export default function TermsOfService() {
             Terms of Service
           </h1>
           <p className="text-xs text-gray-500">
-            Last updated: September 2026 | Governing contract between Buddy Mattress and Customer
+            Last updated: September 2026 | Governing contract between Luvars Fashion and Customer
           </p>
         </div>
 
         {/* Introduction */}
         <div className="text-xs sm:text-sm text-gray-700 leading-relaxed space-y-2">
           <p>
-            Welcome to <strong>Buddy Mattress</strong>. These Terms of Service (&quot;Terms&quot;) govern your use of our website, digital store, and purchase of mattresses, orthopedic pillows, and sleep accessories manufactured and marketed by <strong>Buddy Mattress</strong>, Paramathi Velur, Tamil Nadu, India.
+            Welcome to <strong>Luvars Fashion</strong>. These Terms of Service (&quot;Terms&quot;) govern your use of our website, digital store, and purchase of t-shirts, shirts, casual apparel, and fashion accessories designed and marketed by <strong>Luvars Fashion</strong>, Paramathi Velur, Tamil Nadu, India.
           </p>
           <p>
             By accessing our store, registering an account, or placing an order, you agree to be bound by these Terms and our Privacy Policy.
@@ -61,20 +61,20 @@ export default function TermsOfService() {
           {/* 3. 100-Night Trial */}
           <section className="space-y-2">
             <h2 className="text-base font-bold text-gray-900">
-              3. 100-Night Risk-Free Trial
+              3. 15-Day Easy Returns & Exchanges
             </h2>
             <p>
-              Eligible mattresses include a 100-Night Trial calculated from the date of doorstep delivery. We recommend sleeping on your mattress for at least 30 nights to allow your spine to adjust. If you are not satisfied within 100 nights, contact us at <a href="mailto:support@buddymattress.in" className="text-[#007185] hover:underline font-medium">support@buddymattress.in</a> for return pickup and a 100% refund. The mattress must be in hygienic condition without burns, stains, or physical tears.
+              We offer a 15-Day Easy Return & Exchange Policy on eligible fashion items from the date of delivery. Items must be unworn, unwashed, with original brand tags attached.
             </p>
           </section>
 
           {/* 4. 10-Year Warranty */}
           <section className="space-y-2">
             <h2 className="text-base font-bold text-gray-900">
-              4. 10-Year Warranty Terms
+              4. Quality Assurance & Defect Warranty
             </h2>
             <p>
-              Buddy Mattresses are warranted against manufacturing defects and visible body indentations/sagging greater than 1 inch (25 mm) not resulting from an improper bed base. The warranty excludes normal softening of foam, fabric tears, burns, liquid spills, or accidental damage.
+              Luvars Fashiones are warranted against manufacturing defects and visible body indentations/sagging greater than 1 inch (25 mm) not resulting from an improper bed base. The warranty excludes normal softening of foam, fabric tears, burns, liquid spills, or accidental damage.
             </p>
           </section>
 
@@ -96,15 +96,15 @@ export default function TermsOfService() {
             <div className="border border-gray-200 rounded-md p-4 bg-gray-50/50 space-y-2 text-xs">
               <div className="flex items-center gap-2 font-bold text-gray-900">
                 <Building2 className="w-4 h-4 text-gray-700" />
-                <span>Buddy Mattress</span>
+                <span>Luvars Fashion</span>
               </div>
               <p className="text-gray-700">
                 <strong>Address:</strong> Near RTO Office, Paramathi, Paramathi Velur, Namakkal District, Tamil Nadu - 637207, India
               </p>
               <p className="text-gray-700">
                 <strong>Email:</strong>{" "}
-                <a href="mailto:support@buddymattress.in" className="text-[#007185] hover:underline font-medium">
-                  support@buddymattress.in
+                <a href="mailto:support@luvarsfashion.com" className="text-[#007185] hover:underline font-medium">
+                  support@luvarsfashion.com
                 </a>
               </p>
               <p className="text-gray-700">

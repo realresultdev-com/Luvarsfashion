@@ -5,7 +5,7 @@
  * background prefetching, and instant cache clearance.
  */
 
-const CACHE_NAME = "buddy-mattress-videos-v1";
+const CACHE_NAME = "luvars-fashion-videos-v1";
 const MAX_CACHED_ITEMS = 15;
 const MAX_CACHE_SIZE_BYTES = 80 * 1024 * 1024; // 80 MB threshold
 

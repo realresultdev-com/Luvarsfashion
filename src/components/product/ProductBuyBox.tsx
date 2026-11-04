@@ -103,12 +103,12 @@ export default function ProductBuyBox({
           <div className="pt-2 border-t border-gray-200 space-y-1 text-[11px] text-gray-600">
             <div className="flex justify-between items-center">
               <span className="text-gray-500">Ships from</span>
-              <span className="font-normal text-[#0f1111] truncate">Buddy Mattress</span>
+              <span className="font-normal text-[#0f1111] truncate">Luvars Fashion</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-gray-500">Sold by</span>
               <span className="font-normal text-[#007185] hover:underline cursor-pointer truncate">
-                Buddy Mattress Store
+                Luvars Fashion Store
               </span>
             </div>
             <div className="flex justify-between items-center">

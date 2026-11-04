@@ -28,7 +28,7 @@ export default function GrievanceRedressal() {
 
         {/* Introduction */}
         <p className="text-sm text-gray-700 leading-relaxed">
-          Buddy Mattress is committed to transparent, fair, and prompt resolution of customer grievances. In accordance with Rule 4(4) of the Consumer Protection (E-Commerce) Rules, 2020, the details of our designated Grievance & Nodal Officer are provided below.
+          Luvars Fashion is committed to transparent, fair, and prompt resolution of customer grievances. In accordance with Rule 4(4) of the Consumer Protection (E-Commerce) Rules, 2020, the details of our designated Grievance & Nodal Officer are provided below.
         </p>
 
         {/* Officer Details - Clean Table / Definition Layout */}
@@ -59,15 +59,15 @@ export default function GrievanceRedressal() {
             <div className="px-4 py-3 grid grid-cols-1 sm:grid-cols-3 gap-1">
               <span className="text-gray-500 font-medium">Email</span>
               <span className="sm:col-span-2">
-                <a href="mailto:support@buddymattress.in" className="text-gray-900 font-medium underline hover:text-sky-600">
-                  support@buddymattress.in
+                <a href="mailto:support@luvarsfashion.com" className="text-gray-900 font-medium underline hover:text-sky-600">
+                  support@luvarsfashion.com
                 </a>
               </span>
             </div>
             <div className="px-4 py-3 grid grid-cols-1 sm:grid-cols-3 gap-1">
               <span className="text-gray-500 font-medium">Registered Address</span>
               <span className="sm:col-span-2 text-gray-800 leading-relaxed">
-                Buddy Mattress, Near RTO Office, Paramathi, Paramathi Velur, Namakkal District, Tamil Nadu - 637207, India.
+                Luvars Fashion, Near RTO Office, Paramathi, Paramathi Velur, Namakkal District, Tamil Nadu - 637207, India.
               </span>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function GrievanceRedressal() {
             </h2>
             <ol className="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-gray-600">
               <li>
-                <strong>Initial Contact:</strong> Send an email to <a href="mailto:support@buddymattress.in" className="text-gray-900 font-medium underline hover:text-sky-600">support@buddymattress.in</a> or call our helpline at <a href="tel:+919443300000" className="text-gray-900 font-medium underline hover:text-sky-600">+91 94433 00000</a>. Please include your Order ID and contact details.
+                <strong>Initial Contact:</strong> Send an email to <a href="mailto:support@luvarsfashion.com" className="text-gray-900 font-medium underline hover:text-sky-600">support@luvarsfashion.com</a> or call our helpline at <a href="tel:+919443300000" className="text-gray-900 font-medium underline hover:text-sky-600">+91 94433 00000</a>. Please include your Order ID and contact details.
               </li>
               <li>
                 <strong>Support Desk Review:</strong> Our customer support desk will acknowledge your ticket and attempt immediate resolution within 48 hours.

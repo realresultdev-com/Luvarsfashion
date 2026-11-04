@@ -22,17 +22,17 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-xs text-gray-500">
-            Last updated: September 2026 | Effective for all users & customers of Buddy Mattress
+            Last updated: September 2026 | Effective for all users & customers of Luvars Fashion
           </p>
         </div>
 
         {/* Introduction */}
         <div className="text-xs sm:text-sm text-gray-700 leading-relaxed space-y-3">
           <p>
-            At <strong>Buddy Mattress</strong> (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;), we value your trust and are committed to protecting your personal data in accordance with the <strong>Digital Personal Data Protection (DPDP) Act, 2023</strong> and the <strong>Information Technology Act, 2000</strong> of India.
+            At <strong>Luvars Fashion</strong> (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;), we value your trust and are committed to protecting your personal data in accordance with the <strong>Digital Personal Data Protection (DPDP) Act, 2023</strong> and the <strong>Information Technology Act, 2000</strong> of India.
           </p>
           <p>
-            This Privacy Policy describes how we collect, use, and process your personal information when you visit our store, purchase mattresses or bedding accessories, or contact customer support.
+            This Privacy Policy describes how we collect, use, and process your personal information when you visit our store, purchase t-shirts, shirts, casual apparel, and fashion accessories, or contact customer support.
           </p>
         </div>
 
@@ -101,7 +101,7 @@ export default function PrivacyPolicy() {
               <li>Right to readily available grievance redressal.</li>
             </ul>
             <p className="text-xs text-gray-600 pt-1">
-              To exercise any of these rights, email us at <a href="mailto:support@buddymattress.in" className="text-[#007185] font-semibold hover:underline">support@buddymattress.in</a>. We will process requests within 30 days.
+              To exercise any of these rights, email us at <a href="mailto:support@luvarsfashion.com" className="text-[#007185] font-semibold hover:underline">support@luvarsfashion.com</a>. We will process requests within 30 days.
             </p>
           </section>
 
@@ -117,15 +117,15 @@ export default function PrivacyPolicy() {
             <div className="border border-gray-200 rounded-md p-4 bg-gray-50/50 space-y-2 text-xs">
               <div className="flex items-center gap-2 font-bold text-gray-900">
                 <Building2 className="w-4 h-4 text-gray-700" />
-                <span>Buddy Mattress</span>
+                <span>Luvars Fashion</span>
               </div>
               <p className="text-gray-700">
                 <strong>Address:</strong> Near RTO Office, Paramathi, Paramathi Velur, Namakkal District, Tamil Nadu - 637207, India
               </p>
               <p className="text-gray-700">
                 <strong>Email:</strong>{" "}
-                <a href="mailto:support@buddymattress.in" className="text-[#007185] hover:underline font-medium">
-                  support@buddymattress.in
+                <a href="mailto:support@luvarsfashion.com" className="text-[#007185] hover:underline font-medium">
+                  support@luvarsfashion.com
                 </a>
               </p>
               <p className="text-gray-700">

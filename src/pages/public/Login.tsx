@@ -52,8 +52,8 @@ export default function Login() {
     if (hasTokens) {
       const rawHash = hash ? hash.substring(1) : "";
       const queryStr = rawHash ? `?${rawHash}` : search;
-      const androidIntent = `intent://login${queryStr}#Intent;scheme=com.buddymattress.app;package=com.buddymattress.app;end`;
-      const customScheme = `com.buddymattress.app://login${queryStr}`;
+      const androidIntent = `intent://login${queryStr}#Intent;scheme=com.luvarsfashion.app;package=com.luvarsfashion.app;end`;
+      const customScheme = `com.luvarsfashion.app://login${queryStr}`;
 
       // 1. If running in external browser / Chrome Custom Tab on mobile, trigger app deep link
       try {
@@ -175,7 +175,7 @@ export default function Login() {
           </div>
           <h2 className="text-xl font-bold text-white mb-2">Google Sign-in Successful!</h2>
           <p className="text-sm text-slate-400 max-w-xs mb-6">
-            Returning to the Buddy Mattress app...
+            Returning to the Luvars Fashion app...
           </p>
           <div className="flex flex-col gap-3 w-full max-w-xs">
             <a
@@ -209,7 +209,7 @@ export default function Login() {
             <Link to="/" className="inline-block hover:opacity-80 transition-opacity">
               <img
                 src="/logo-transparent.png"
-                alt="Buddy Mattress"
+                alt="Luvars Fashion"
                 className="h-10 w-auto mx-auto object-contain"
               />
             </Link>
@@ -220,7 +220,7 @@ export default function Login() {
               <p className="text-xs text-[#86868b] mt-0.5">
                 {successUser
                   ? `Signed in as ${successUser.name || "User"}`
-                  : "to continue to Buddy Mattress"}
+                  : "to continue to Luvars Fashion"}
               </p>
             </div>
           </div>
@@ -327,7 +327,7 @@ export default function Login() {
 
               {/* Create account link */}
               <div className="pt-1 text-xs text-gray-600">
-                New to Buddy Mattress?{" "}
+                New to Luvars Fashion?{" "}
                 <Link
                   to={fromQuery ? `/register?redirect=${encodeURIComponent(fromQuery)}` : "/register"}
                   className="text-[#0ea9df] hover:underline font-semibold"
@@ -340,7 +340,7 @@ export default function Login() {
 
           {/* Mandatory DPDP & IT Act Consent */}
           <p className="text-[11px] text-[#86868b] leading-relaxed pt-1">
-            By continuing, you agree to Buddy Mattress&apos;s{" "}
+            By continuing, you agree to Luvars Fashion&apos;s{" "}
             <Link to="/terms" className="text-[#0ea9df] hover:underline font-medium">
               Terms of Service
             </Link>{" "}
@@ -379,7 +379,7 @@ export default function Login() {
           </Link>
         </div>
         <p className="text-[#a1a1a6]">
-          © {new Date().getFullYear()} Buddy Mattress. All rights reserved.
+          © {new Date().getFullYear()} Luvars Fashion. All rights reserved.
         </p>
       </footer>
     </div>

@@ -29,7 +29,7 @@ export default function ShippingPolicy() {
         {/* Content Body */}
         <div className="space-y-6 text-sm leading-relaxed text-gray-700">
           <p>
-            At Buddy Mattress, we are committed to delivering your order accurately, in good condition, and always on time. We provide free doorstep delivery for all products to over 19,000 postal codes across India with no minimum order value or hidden handling fees.
+            At Luvars Fashion, we are committed to delivering your order accurately, in good condition, and always on time. We provide free doorstep delivery for all products to over 19,000 postal codes across India with no minimum order value or hidden handling fees.
           </p>
 
           <section className="space-y-3 pt-2">
@@ -89,16 +89,11 @@ export default function ShippingPolicy() {
 
           <section className="space-y-3 pt-2">
             <h2 className="text-base font-semibold text-gray-900">
-              3. Packaging & Bed-in-a-Box Technology
+              3. Protective Garment Packaging
             </h2>
             <p>
-              Your Buddy Mattress is vacuum compressed and machine rolled at our factory using heavy-duty protective food-grade film, then packaged into an easy-to-handle box:
+              Every Luvars Fashion order is neatly folded, poly-packed in waterproof sealed bags, and encased in tamper-evident outer courier shipping flyers to ensure your clothes arrive fresh, clean, and in pristine condition.
             </p>
-            <ul className="list-disc pl-5 space-y-1.5 text-gray-700">
-              <li>Protects the mattress against dust, humidity, and transit scuffs.</li>
-              <li>Fits easily into small car trunks, passenger elevators, and narrow stairwells.</li>
-              <li>Once unboxed and plastic is cut, the mattress expands to 90% of its volume within 2 hours, and achieves full structural firmness in 24 to 48 hours.</li>
-            </ul>
           </section>
 
           <section className="space-y-3 pt-2">
@@ -115,7 +110,7 @@ export default function ShippingPolicy() {
               5. Damaged Shipments & Insurance
             </h2>
             <p>
-              Every shipment is 100% insured against transit damage or loss. If the external carton appears severely damaged or tampered with upon arrival, please take a photograph and write a note on the delivery receipt before accepting, or contact our support team within 48 hours at <a href="mailto:support@buddymattress.in" className="underline text-gray-900 hover:text-sky-600">support@buddymattress.in</a>. We will dispatch an immediate replacement at no cost.
+              Every shipment is 100% insured against transit damage or loss. If the external carton appears severely damaged or tampered with upon arrival, please take a photograph and write a note on the delivery receipt before accepting, or contact our support team within 48 hours at <a href="mailto:support@luvarsfashion.com" className="underline text-gray-900 hover:text-sky-600">support@luvarsfashion.com</a>. We will dispatch an immediate replacement at no cost.
             </p>
           </section>
 
@@ -124,10 +119,10 @@ export default function ShippingPolicy() {
               6. Factory & Dispatch Office
             </h2>
             <p>
-              <strong>Buddy Mattress Private Limited</strong><br />
+              <strong>Luvars Fashion Private Limited</strong><br />
               Near RTO Office, Paramathi, Paramathi Velur, Namakkal District, Tamil Nadu – 637207, India.<br />
               Customer Support Helpline: <a href="tel:+919443300000" className="underline text-gray-900">+91 94433 00000</a> (Mon – Sat, 9:30 AM to 6:30 PM)<br />
-              Email: <a href="mailto:support@buddymattress.in" className="underline text-gray-900">support@buddymattress.in</a>
+              Email: <a href="mailto:support@luvarsfashion.com" className="underline text-gray-900">support@luvarsfashion.com</a>
             </p>
           </section>
         </div>

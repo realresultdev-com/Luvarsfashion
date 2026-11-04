@@ -121,7 +121,7 @@ export default function IosNotificationBanner() {
               </div>
               <div className="flex items-center gap-1.5 flex-wrap">
                 <span className="text-xs font-bold text-gray-900">
-                  Buddy Mattress
+                  Luvars Fashion
                 </span>
                 <span className="text-[10px] text-gray-300">•</span>
                 <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200/80 uppercase tracking-wider">

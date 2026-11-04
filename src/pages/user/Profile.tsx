@@ -386,7 +386,7 @@ export default function Profile() {
             className="w-full py-3 rounded-xl border border-gray-300 bg-white text-xs font-semibold text-red-600 hover:bg-red-50 transition-colors flex items-center justify-center gap-2 shadow-2xs cursor-pointer"
           >
             <LogOut className="w-4 h-4" />
-            <span>Sign Out of Buddy Mattress</span>
+            <span>Sign Out of Luvars Fashion</span>
           </button>
         </div>
       </div>
@@ -428,7 +428,7 @@ export default function Profile() {
               to="/shop"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gray-900 hover:bg-black text-white text-xs font-semibold transition-colors shadow-2xs"
             >
-              <span>Explore Mattresses</span>
+              <span>Explore Fashion</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>

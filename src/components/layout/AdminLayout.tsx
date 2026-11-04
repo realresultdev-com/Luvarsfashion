@@ -59,7 +59,7 @@ export default function AdminLayout() {
           <div className="flex items-center gap-2 min-w-0">
             <img
               src="/logo-white.png"
-              alt="Buddy Mattress"
+              alt="Luvars Fashion"
               className="h-5 w-auto object-contain shrink-0"
             />
             <span className="text-[10px] font-semibold tracking-wider uppercase bg-white/10 px-2 py-0.5 rounded border border-white/20 shrink-0">

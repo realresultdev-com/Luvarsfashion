@@ -19,16 +19,16 @@ export default function RefundPolicy() {
         {/* Page Header */}
         <div className="space-y-2 border-b border-gray-200 pb-6">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            Cancellation & Refund Policy
+            Cancellation & Return Policy
           </h1>
           <p className="text-xs text-gray-500">
-            Last updated: September 2026
+            Last updated: September 2026 | Effective for all customers of Luvars Fashion
           </p>
         </div>
 
         {/* Introduction */}
         <p className="text-sm text-gray-700 leading-relaxed">
-          Every Buddy Mattress comes with a genuine 100-Night Risk-Free Sleep Trial. If you are not completely satisfied with your sleep experience, we will arrange a free doorstep pickup and refund your purchase in full with no hidden restocking deductions.
+          At <strong>Luvars Fashion</strong>, we want you to love what you wear. If you are not completely satisfied with your purchase, we offer a hassle-free <strong>15-Day Easy Return & Exchange Policy</strong>. We arrange zero-cost doorstep reverse pickup and full refund with no hidden restocking deductions.
         </p>
 
         {/* Policy Details */}
@@ -36,17 +36,17 @@ export default function RefundPolicy() {
           {/* Section 1 */}
           <section className="space-y-3">
             <h2 className="text-base font-bold text-gray-900">
-              1. 100-Night Home Trial Guidelines
+              1. 15-Day Easy Return & Exchange Guidelines
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm text-gray-600">
               <li>
-                <strong>Trial Duration:</strong> The 100-night trial begins from the date of verified delivery at your shipping address.
+                <strong>Eligibility Window:</strong> You can initiate a return or size exchange within 15 days from the date of verified doorstep delivery.
               </li>
               <li>
-                <strong>30-Night Adjustment Period:</strong> Sleep ergonomics show that your body requires 3 to 4 weeks to adjust to a new orthopedic mattress. We request that you sleep on the mattress for at least 30 nights before initiating a trial return.
+                <strong>Garment Condition:</strong> Items must be returned in their original condition—unworn, unwashed, unaltered, with original brand tags and poly-pack packaging intact.
               </li>
               <li>
-                <strong>Condition:</strong> The mattress must be returned in clean, sanitary condition without burns, liquid stains, pet damage, cuts, or physical tears.
+                <strong>Size Exchanges:</strong> If a t-shirt or shirt does not fit as expected, you can request an instant size replacement at zero additional shipping fee.
               </li>
             </ul>
           </section>
@@ -54,20 +54,20 @@ export default function RefundPolicy() {
           {/* Section 2 */}
           <section className="space-y-3">
             <h2 className="text-base font-bold text-gray-900">
-              2. How to Request a Return
+              2. How to Request a Return or Exchange
             </h2>
             <p className="text-xs sm:text-sm text-gray-600">
-              To start a return request:
+              Returning your order is quick and straightforward:
             </p>
             <ol className="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-gray-600">
               <li>
-                Email us at <a href="mailto:support@buddymattress.in" className="text-gray-900 font-medium underline hover:text-sky-600">support@buddymattress.in</a> or call our customer helpline at <a href="tel:+919443300000" className="text-gray-900 font-medium underline hover:text-sky-600">+91 94433 00000</a> with your Order ID and photos of the mattress.
+                Go to <strong>Your Orders</strong> in your account, or email us at <a href="mailto:support@luvarsfashion.com" className="text-gray-900 font-medium underline hover:text-sky-600">support@luvarsfashion.com</a> with your Order ID.
               </li>
               <li>
-                Our team will review your request within 24 to 48 hours and coordinate a doorstep reverse pickup with our logistics partner.
+                Select whether you would like a refund or a replacement size.
               </li>
               <li>
-                The courier team will inspect and package the mattress at your address at zero shipping cost to you.
+                Our courier partner will pick up the package directly from your doorstep within 24 to 48 hours at zero cost to you.
               </li>
             </ol>
           </section>
@@ -78,7 +78,7 @@ export default function RefundPolicy() {
               3. Refund Processing & Timelines
             </h2>
             <p className="text-xs sm:text-sm text-gray-600">
-              Once the return is collected and verified, your refund is initiated immediately. The amount is credited back to your original payment method (Bank Account, UPI, or Credit/Debit Card) via Razorpay within 5 to 7 business days, in accordance with standard banking procedures.
+              Once the return package is received and verified by our quality control team, your refund is credited back to your original payment method (Bank Account, UPI, or Credit/Debit Card) via Razorpay within 3 to 5 business days.
             </p>
           </section>
 
@@ -88,22 +88,21 @@ export default function RefundPolicy() {
               4. Order Cancellation
             </h2>
             <p className="text-xs sm:text-sm text-gray-600">
-              Orders can be cancelled before dispatch directly from your account or by contacting customer support. There are no cancellation fees for orders cancelled prior to shipping, and a full refund will be processed immediately.
+              Orders can be cancelled anytime before dispatch directly from your account page or by contacting customer support. Full refunds for cancelled orders are initiated immediately.
             </p>
           </section>
 
           {/* Section 5: Contact */}
           <section className="space-y-2 pt-4 border-t border-gray-200">
             <h2 className="text-base font-bold text-gray-900">
-              5. Customer Support
+              5. Customer Care
             </h2>
             <p className="text-xs sm:text-sm text-gray-600">
-              For any questions regarding returns or refunds, please reach out to:
-            </p>
-            <p className="text-xs sm:text-sm text-gray-800 leading-relaxed">
-              Email: <a href="mailto:support@buddymattress.in" className="text-gray-900 font-medium underline hover:text-sky-600">support@buddymattress.in</a><br />
-              Helpline: <a href="tel:+919443300000" className="text-gray-900 font-medium underline hover:text-sky-600">+91 94433 00000</a> (Mon – Sat: 9:30 AM to 6:30 PM IST)<br />
-              Address: Buddy Mattress, Paramathi Velur, Namakkal, Tamil Nadu, India.
+              Need assistance with an exchange or return? Email us at{" "}
+              <a href="mailto:support@luvarsfashion.com" className="text-gray-900 font-medium underline hover:text-sky-600">
+                support@luvarsfashion.com
+              </a>{" "}
+              or call <a href="tel:+919443300000" className="text-gray-900 font-medium underline hover:text-sky-600">+91 94433 00000</a> (Mon – Sat, 9:30 AM – 6:30 PM IST).
             </p>
           </section>
         </div>

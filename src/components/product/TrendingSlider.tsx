@@ -118,7 +118,7 @@ export default function TrendingSlider({ products }: TrendingSliderProps) {
       <div className="flex items-center justify-between mb-3 px-1">
         <div>
           <h2 className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">
-            Trending Deals
+            Trending Deals shirts
           </h2>
         </div>
 
@@ -170,8 +170,8 @@ export default function TrendingSlider({ products }: TrendingSliderProps) {
               product.original_price && product.original_price > product.price
                 ? product.original_price
                 : product.originalMRP && product.originalMRP > product.price
-                ? product.originalMRP
-                : null;
+                  ? product.originalMRP
+                  : null;
             const discount =
               mrp && mrp > product.price
                 ? product.discount_percent || product.discountPercent || Math.round(((mrp - product.price) / mrp) * 100)
@@ -295,11 +295,10 @@ export default function TrendingSlider({ products }: TrendingSliderProps) {
               key={dotIdx}
               type="button"
               onClick={() => handleDotClick(dotIdx)}
-              className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
-                activeDot === dotIdx
-                  ? "w-5 bg-black"
-                  : "w-1.5 bg-gray-300 hover:bg-gray-400"
-              }`}
+              className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${activeDot === dotIdx
+                ? "w-5 bg-black"
+                : "w-1.5 bg-gray-300 hover:bg-gray-400"
+                }`}
               aria-label={`Go to slide ${dotIdx + 1}`}
             />
           ))}

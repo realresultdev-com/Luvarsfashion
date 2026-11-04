@@ -62,7 +62,7 @@ export default function InstagramVideoCard() {
 
   const mediaUrl = currentAd.video_url;
   const posterUrl = currentAd.poster_url || "";
-  const adTitle = currentAd.title || "Buddy Mattress";
+  const adTitle = currentAd.title || "Luvars Fashion";
   const ctaLink = currentAd.link_url || "/shop";
   const isImage = isImageMedia(mediaUrl);
 
@@ -119,7 +119,7 @@ export default function InstagramVideoCard() {
               <div className="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden">
                 <img
                   src="/logo-transparent.png"
-                  alt="Buddy Mattress"
+                  alt="Luvars Fashion"
                   className="w-5 h-5 object-contain"
                 />
               </div>
