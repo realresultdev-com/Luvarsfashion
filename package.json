@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev:vite\" \"npm run dev:wrangler\"",
-    "dev:wrangler": "wrangler pages dev --d1 DB=e04f824a-ebdc-4584-868f-26d415d64119 --r2 BUCKET=buddymatters --compatibility-date=2024-09-01 --proxy 5175",
+    "dev:wrangler": "wrangler pages dev --d1 DB=20cbffcc-c554-4004-9483-bc4a2989d59f --r2 BUCKET=buddymatters --compatibility-date=2024-09-01 --proxy 5175",
     "dev:dist": "npm run build && wrangler pages dev dist --d1 DB --r2 BUCKET=buddymatters --compatibility-date=2024-09-01",
     "dev:vite": "vite",
     "build": "tsc && vite build",
