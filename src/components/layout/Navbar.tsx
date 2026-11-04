@@ -22,6 +22,8 @@ import {
   Bell,
 } from "lucide-react";
 import SearchBar from "./SearchBar";
+import LuvarsLogo from "../common/LuvarsLogo";
+import { formatCategoryName } from "../../utils/fashionMapping";
 import NotificationCenterModal from "../common/NotificationCenterModal";
 import { notificationService } from "../../services/notification.service";
 
@@ -89,15 +91,8 @@ export default function Navbar() {
             {mobileMenuOpen ? <X className="w-5 h-5 text-slate-100" /> : <Menu className="w-5 h-5 text-slate-100" />}
           </button>
 
-          <Link
-            to="/"
-            className="flex items-center p-0.5 rounded-lg hover:opacity-90 transition-opacity shrink-0"
-          >
-            <img
-              src="/logo-white.png"
-              alt="Luvars Fashion"
-              className="h-7 sm:h-10 w-auto object-contain"
-            />
+          <Link to="/" className="flex items-center p-0.5 rounded-lg hover:opacity-90 transition-opacity shrink-0">
+            <LuvarsLogo />
           </Link>
         </div>
 
@@ -307,7 +302,7 @@ export default function Navbar() {
                     : "bg-slate-800/80 text-slate-200 hover:bg-slate-700/80 border border-slate-700/50"
                 }`}
               >
-                {cat.name}
+                {formatCategoryName(cat.name)}
               </Link>
             );
           })}
@@ -497,7 +492,7 @@ export default function Navbar() {
                     onClick={() => setMobileMenuOpen(false)}
                     className="block py-1.5 px-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-[#38bdf8]"
                   >
-                    {cat.name}
+                    {formatCategoryName(cat.name)}
                   </Link>
                 ))}
               </div>

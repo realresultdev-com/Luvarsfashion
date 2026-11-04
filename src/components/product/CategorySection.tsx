@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import type { Category, Product } from "../../types/product.types";
 import ProductCard from "./ProductCard";
+import { formatCategoryName } from "../../utils/fashionMapping";
 
 interface CategorySectionProps {
   category: Category;
@@ -24,7 +25,7 @@ export default function CategorySection({
       <div className="flex items-center justify-between px-1 border-b border-gray-200/80 pb-3">
         <div>
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">
-            {category.name}
+            {formatCategoryName(category.name)}
           </h2>
         </div>
 

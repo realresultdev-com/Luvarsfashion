@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { formatFashionTitle } from "../../utils/fashionMapping";
 import { Video, Volume2, VolumeX, Sparkles } from "lucide-react";
 import { heroVideoService, type HeroVideo } from "../../services/heroVideo.service";
 import { getAdaptiveVideoUrl } from "../../utils/videoTranscoder";
@@ -66,6 +67,8 @@ export default function HeroVideoBanner() {
         if (Array.isArray(res?.data) && res.data.length > 0) {
           const sanitized = res.data.map((item) => ({
             ...item,
+            title: formatFashionTitle(item.title),
+            subtitle: formatFashionTitle(item.subtitle),
             video_url: sanitizeVideoUrl(item.video_url),
             video_url_720p: item.video_url_720p ? sanitizeVideoUrl(item.video_url_720p) : undefined,
             video_url_360p: item.video_url_360p ? sanitizeVideoUrl(item.video_url_360p) : undefined,
@@ -76,8 +79,8 @@ export default function HeroVideoBanner() {
           setHeroVideos([
             {
               id: "hv_local_1",
-              title: "Luxury Orthopedic Sleep Collection",
-              subtitle: "Engineered with organic latex & high resilience foam",
+              title: "New Season Drops: Premium T-Shirts & Casuals",
+              subtitle: "100% Combed Cotton & High-Definition Graphic Prints",
               video_url: "/videos/hero-mattress.mp4",
               poster_url: "/hero-mattress.jpg",
               link_url: "/shop",
@@ -91,8 +94,8 @@ export default function HeroVideoBanner() {
         setHeroVideos([
           {
             id: "hv_local_1",
-            title: "Luxury Orthopedic Sleep Collection",
-            subtitle: "Engineered with organic latex & high resilience foam",
+            title: "New Season Drops: Premium T-Shirts & Casuals",
+            subtitle: "100% Combed Cotton & High-Definition Graphic Prints",
             video_url: "/videos/hero-mattress.mp4",
             poster_url: "/hero-mattress.jpg",
             link_url: "/shop",

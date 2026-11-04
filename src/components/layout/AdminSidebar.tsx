@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import LuvarsLogo from "../common/LuvarsLogo";
 import {
   LayoutDashboard,
   Package,
@@ -32,7 +33,7 @@ export default function AdminSidebar({ onClose, className = "" }: AdminSidebarPr
       <div>
         <div className="flex items-center justify-between px-3 py-2.5 mb-6 rounded-lg bg-black text-white shadow-2xs">
           <div className="flex items-center gap-2 min-w-0">
-            <img src="/logo-white.png" alt="Luvars Fashion" className="h-5 w-auto object-contain shrink-0" />
+            <LuvarsLogo className="scale-75 origin-left" />
             <span className="text-[11px] font-semibold tracking-wider uppercase border-l border-white/20 pl-2 truncate">
               Admin
             </span>

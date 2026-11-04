@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { Link } from "react-router-dom";
 import type { Product } from "../../types/product.types";
 import { getProductUrl } from "../../utils/urlSecurity";
+import { formatFashionTitle } from "../../utils/fashionMapping";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 interface TrendingSliderProps {
@@ -118,7 +119,7 @@ export default function TrendingSlider({ products }: TrendingSliderProps) {
       <div className="flex items-center justify-between mb-3 px-1">
         <div>
           <h2 className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">
-            Trending Deals shirts
+            Trending Fashion Drops
           </h2>
         </div>
 
@@ -198,7 +199,7 @@ export default function TrendingSlider({ products }: TrendingSliderProps) {
                         className="hover:underline block"
                       >
                         <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 leading-tight">
-                          {product.name}
+                          {formatFashionTitle(product.name)}
                         </h3>
                       </Link>
                     </div>
@@ -253,7 +254,7 @@ export default function TrendingSlider({ products }: TrendingSliderProps) {
                     >
                       <img
                         src={img}
-                        alt={product.name}
+                        alt={formatFashionTitle(product.name)}
                         className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                       />
                     </Link>

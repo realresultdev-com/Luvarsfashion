@@ -5,6 +5,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useCart } from "../../context/CartContext";
 import { useLanguage } from "../../context/LanguageContext";
 import { getProductUrl } from "../../utils/urlSecurity";
+import { formatFashionTitle } from "../../utils/fashionMapping";
 import type { Product, ProductColorVariant } from "../../types/product.types";
 import RatingBadge from "../common/RatingBadge";
 import PriceTag from "../common/PriceTag";
@@ -41,7 +42,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
     addItem({
       productId: product.id,
-      name: selectedVariant?.name ? `${product.name} (${selectedVariant.name})` : product.name,
+      name: selectedVariant?.name ? `${formatFashionTitle(product.name)} (${selectedVariant.name})` : product.name,
       price: product.price,
       quantity: 1,
       image: displayedImage,
@@ -82,7 +83,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
           <img
             src={displayedImage}
-            alt={product.name}
+            alt={formatFashionTitle(product.name)}
             className="max-h-full max-w-full object-contain group-hover:scale-102 transition-transform duration-200"
             loading="lazy"
           />
@@ -104,7 +105,7 @@ export default function ProductCard({ product }: { product: Product }) {
         {/* Title */}
         <Link to={getProductUrl(product.id)}>
           <h3 className="text-xs sm:text-sm font-semibold text-gray-900 group-hover:text-black line-clamp-2 leading-snug min-h-[32px] sm:min-h-[36px]">
-            {product.name}
+            {formatFashionTitle(product.name)}
           </h3>
         </Link>
 

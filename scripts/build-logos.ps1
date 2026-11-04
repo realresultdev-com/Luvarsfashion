@@ -127,3 +127,4 @@ $pub = "c:\Users\kavin\Desktop\shirt e-commerce\Buddy-Mattress\public"
 [LogoGenerator]::GenerateFavicon("$pub\favicon.png", 64)
 
 Write-Host "All Luvars Fashion logos generated successfully!"
+

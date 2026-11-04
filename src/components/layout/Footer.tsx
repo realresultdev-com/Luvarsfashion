@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Globe, MapPin, PhoneCall, Mail, ArrowUp } from "lucide-react";
+import LuvarsLogo from "../common/LuvarsLogo";
 import { useLanguage } from "../../context/LanguageContext";
 
 export default function Footer() {
@@ -28,11 +29,7 @@ export default function Footer() {
           {/* Col 1: Brand & Bio */}
           <div className="space-y-4">
             <Link to="/" onClick={scrollToTop} className="inline-block">
-              <img
-                src="/logo-white.png"
-                alt="Luvars Fashion"
-                className="h-8 w-auto object-contain"
-              />
+              <LuvarsLogo />
             </Link>
             <p className="text-gray-400 text-xs leading-relaxed max-w-xs">
               Direct-from-manufacturer fashion brand. Crafted with premium fabrics and vibrant prints for everyday style.

@@ -4,6 +4,7 @@ import { useAuth } from "../../hooks/useAuth";
 import { authService } from "../../services/auth.service";
 import GoogleLoginButton from "../../components/common/GoogleLoginButton";
 import { AlertCircle } from "lucide-react";
+import LuvarsLogo from "../../components/common/LuvarsLogo";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -42,11 +43,7 @@ export default function Register() {
       {/* Luvars Fashion Logo */}
       <div className="text-center">
         <Link to="/" className="inline-flex flex-col items-center">
-          <img
-            src="/logo-transparent.png"
-            alt="Luvars Fashion"
-            className="h-12 w-auto object-contain"
-          />
+          <LuvarsLogo isDark />
         </Link>
       </div>
 
