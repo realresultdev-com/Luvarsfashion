@@ -58,7 +58,7 @@ export default function AdminLayout() {
         {/* Native Top App Bar */}
         <div className="bg-black text-white px-3.5 py-2.5 flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0">
-            <LuvarsLogo isWhite={true} className="scale-90 origin-left" />
+            <LuvarsLogo isDark={false} className="scale-90 origin-left" />
             <span className="text-[10px] font-semibold tracking-wider uppercase bg-white/10 px-2 py-0.5 rounded border border-white/20 shrink-0">
               Admin
             </span>

@@ -334,7 +334,7 @@ export default function Navbar() {
               {/* Top Drawer Header */}
               <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                 <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-                  <LuvarsLogo isWhite={true} />
+                  <LuvarsLogo isDark={false} />
                 </Link>
                 <button
                   type="button"
