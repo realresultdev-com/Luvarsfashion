@@ -73,6 +73,15 @@ UPDATE hero_videos SET
   video_url_360p = 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=600&auto=format&fit=crop&q=80'
 WHERE id = 'hv_502abe5452';
 
+UPDATE hero_videos SET 
+  title = 'Choose the style that matches your vibe ? Only at Luvars Fashion',
+  subtitle = '100% Combed Cotton Daily Wear',
+  video_url = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80',
+  poster_url = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80',
+  video_url_720p = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80',
+  video_url_360p = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80'
+WHERE id = 'hv_8833639dd7';
+
 -- 2. Update Products to T-Shirts & Apparel
 
 -- Product 1001: Urban Tokyo Graphic Oversized Tee
