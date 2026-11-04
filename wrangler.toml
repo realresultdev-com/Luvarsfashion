@@ -1,0 +1,21 @@
+name = "buddy-mattress"
+pages_build_output_dir = "dist"
+compatibility_date = "2024-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ecommerce-db"
+database_id = "20cbffcc-c554-4004-9483-bc4a2989d59f"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "buddymatters"
+
+[vars]
+JWT_SECRET = "supersecret_jwt_key_cf_ecommerce_2024"
+RAZORPAY_KEY_ID = "rzp_test_mockkey123"
+RAZORPAY_KEY_SECRET = "mock_secret_key_123"
+GOOGLE_CLIENT_ID = "1081442493959-80so9v205tjto6n4j1geaaj8k85mri2n.apps.googleusercontent.com"
+R2_PUBLIC_URL = "https://pub-e9f02df81ad34d8da252578b86423390.r2.dev"
+

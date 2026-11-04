@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734935886777",
+    "project_id": "buddy-matters",
+    "storage_bucket": "buddy-matters.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734935886777:android:658234f88c750c81a42468",
+        "android_client_info": {
+          "package_name": "com.buddymattress.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhEw9u0aV7dhzWzcJjIDmmZo1-CrPKg8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

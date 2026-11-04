@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   PRODUCTION iOS & MOBILE OPTIMIZATIONS
+   Fixes:
+   1. iOS Safari viewport auto-zoom on input/textarea focus (<16px bug)
+   2. Horizontal screen wobble / overflow-x scroll on small screens
+   3. iPhone notch and Home Indicator safe-area insets
+   4. Double-tap zoom delays via touch-action manipulation
+   ========================================================================== */
+
+/* 1. Global iOS Auto-Zoom Prevention: Force min 16px font-size on all mobile form controls */
+input,
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"] {
+  font-size: 16px !important;
+}
+
+/* 2. Prevent horizontal scrolling and screen jitter on mobile */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  overscroll-behavior-x: none;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Smooth touch scrolling on mobile */
+* {
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+/* 4. Touch Action Manipulation: Eliminate double-tap zoom delay */
+button,
+a,
+input,
+select,
+textarea,
+label {
+  touch-action: manipulation;
+}
+
+/* 5. Safe Area Insets for iPhone (Notch & Home Bar) & Unified Amazon Typography */
+:root {
+  --font-body: "Amazon Ember", Arial, sans-serif, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  --font-heading: "Amazon Ember", Arial, sans-serif, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  --font-accent: "Amazon Ember", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.4;
+  color: #0f1111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Hierarchy (Unified Amazon-Style Font System) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-body);
+  letter-spacing: normal;
+}
+
+h1 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+h2 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+button,
+.btn-cta {
+  letter-spacing: 0.2px;
+}
+
+.pb-safe {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
+}
+
+/* 6. Tamil Font overrides */
+html[lang="ta"],
+html[lang="ta"] body,
+html[lang="ta"] button,
+html[lang="ta"] input,
+html[lang="ta"] select,
+html[lang="ta"] textarea {
+  font-family: "Noto Sans Tamil", "Mukta Malar", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  letter-spacing: normal !important;
+}
+
+/* 7. Scrollbar Helpers & Global Mobile Scrollbar Hiding */
+@media (max-width: 1024px) {
+  *,
+  html,
+  body,
+  div,
+  section,
+  aside,
+  main,
+  nav,
+  ul,
+  ol {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+
+  ::-webkit-scrollbar {
+    display: none !important;
+    width: 0px !important;
+    height: 0px !important;
+    background: transparent !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 8. 3D Floating Animations */
+@keyframes float-pillow {
+  0%, 100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-2deg);
+  }
+}
+
+.animate-float-pillow {
+  animation: float-pillow 5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float-shadow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(0.85);
+    opacity: 0.3;
+  }
+}
+
+.animate-float-shadow {
+  animation: float-shadow 5s ease-in-out infinite;
+}
+

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Buddy Mattress</string>
+    <string name="title_activity_main">Buddy Mattress</string>
+    <string name="package_name">com.buddymattress.app</string>
+    <string name="custom_url_scheme">com.buddymattress.app</string>
+</resources>
